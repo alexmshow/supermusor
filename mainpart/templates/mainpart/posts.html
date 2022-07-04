@@ -1,0 +1,17 @@
+{% load static %}
+{% for post in posts %}
+<div>
+  <h4 class="post-name">{{ post.name }}</h4>
+  <img src="{{ post.image.url }}" alt="content" width="400" id="image3" onclick="onImageClick('image3');">
+  <div>
+  <div>
+    <h5>{{ post.user }}</h5>
+    <h5>{{ post.created }}</h5>
+  </div>
+  <div class="likes">
+    <img src="{% static 'mainpart/like.svg' %}">
+    <div>{{ post.total_likes }}</div>
+  </div>
+</div>
+</div>
+{% endfor %}

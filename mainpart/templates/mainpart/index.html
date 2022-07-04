@@ -1,0 +1,16 @@
+{% extends "mainpart/base.html" %}
+{% block title %}MemDose{% endblock %}
+{% block head %}
+{% load static %}
+{% endblock %}
+{% block content %}
+    <div class="container">
+        <h1>Posts</h1>
+        <div id="posts">
+            {% include 'mainpart/posts.html' %}
+        </div>
+    </div>
+    <div><a id="lazyLoadLink" href="javascript:void(0);" data-page="2">Load More Posts</a></div>
+    <script src="{% static 'mainpart/js/jquery-3.6.0.min.js' %}"></script>
+    <script src="{% static 'mainpart/js/main.js' %}"></script>
+{% endblock%}
