@@ -1,0 +1,11 @@
+{% extends 'mainpart/base.html' %}
+{% block title %}Login{% endblock %}
+{% block head %}{% endblock %}
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button type="submit">Login</button>
+        <p>Don't have an account? Create one <a href="/register"></a></p>
+    </form>
+{% endblock %}
