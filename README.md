@@ -1,4 +1,4 @@
 ## Supermusor
-This is another trash django site
-to run this server u need use this command
+This is another trash django site.
+Run server
 ```python manage.py runserver```
