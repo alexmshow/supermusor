@@ -1,4 +1,4 @@
 ## Supermusor
-This is another trash django site.\n
-Run server
+This is another trash django site.
+# Run server
 ```python manage.py runserver```
