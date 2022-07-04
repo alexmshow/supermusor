@@ -1,0 +1,15 @@
+{% extends 'mainpart/base.html' %}
+{% block title %}Create memes{% endblock %}
+{% block content %}
+    <div class="features">
+        <h1>Create meme</h1>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.name }} <br>
+            {{ form.body }} <br>
+            {{ form.image }}
+            <button type="submit">Go</button><br>
+            <span>{{ error }}</span>
+        </form>
+    </div>
+{% endblock %}
